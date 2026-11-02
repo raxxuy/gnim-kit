@@ -12,11 +12,11 @@ importers:
         specifier: ^2.6.4
         version: 2.6.4
       '@gnim-js/gtk4':
-        specifier: ^2.0.0-beta.26
-        version: 2.0.0-beta.26(gnim@2.0.0-beta.26)
+        specifier: ^2.0.0-beta.28
+        version: 2.0.0-beta.28(gnim@2.0.0-beta.28)
       gnim:
-        specifier: ^2.0.0-beta.26
-        version: 2.0.0-beta.26
+        specifier: ^2.0.0-beta.28
+        version: 2.0.0-beta.28
 
 packages:
 
@@ -98,19 +98,19 @@ packages:
   '@formatjs/icu-skeleton-parser@2.1.11':
     resolution: {integrity: sha512-j8cUmOJzVgkHuS0QiQ6ga76UIoLOFSAMWhs7aZJztH3aAdCOAE6vpC8KVvFB4cU10ON0y2/5oOVmPJ43s2lTwA==}
 
-  '@gnim-js/gtk4@2.0.0-beta.26':
-    resolution: {integrity: sha512-RFETKdmWY+olXjB7mDddScN9f9lyT0XakT2zLuiaQogttxoQSGhD6ScEviFPQDWcbswovml+QojZ+LxquKu1Fw==}
+  '@gnim-js/gtk4@2.0.0-beta.28':
+    resolution: {integrity: sha512-giE2dQdSan5cHn6TOPFsmA2j68oqcGl0FtQGNcLOtbTnoWpDn7u1nYQK4D7kNu7O2hzIFJlhP+fRkjLpZKcW8w==}
     engines: {gjs: '>=1.83.0'}
     peerDependencies:
-      gnim: ^2.0.0-beta.26
+      gnim: ^2.0.0-beta.28
 
-  '@gnim-js/linux-x64@2.0.0-beta.26':
-    resolution: {integrity: sha512-zjQWchDpHyAFmlJoJsBhqooy2r3ci42Qfhoyknv1t8Fm6dWpqdsuYu/CAj6BFOZGN6aEyBcqkU9I+YkniJJGvA==}
+  '@gnim-js/linux-x64@2.0.0-beta.28':
+    resolution: {integrity: sha512-xUMGaewlhTVQY6sPG1Z6ZfoS5pDrLKz1yUy3JPTkKxZEfgxd+vgdi9JUOHHWlUnRAvjP5h8xo1f2AJ5UCGKTeQ==}
     cpu: [x64]
     os: [linux]
 
-  gnim@2.0.0-beta.26:
-    resolution: {integrity: sha512-CTtRNPX4wL6gytzbcKx4pYacI4htaS0AAtBWC7oEBA8f+i3dAy71zD8I8zbpQNYp01ImdV4C+bLJJJGllAGnHg==}
+  gnim@2.0.0-beta.28:
+    resolution: {integrity: sha512-anT0qbhAtpoCWYkOjcUJg6D6fxOdl/YncoE7rC8fURktd+AhULAgU5/M8fD/q8hvIuHTBHkl97B/A0F8nRmzhg==}
     engines: {gjs: '>=1.83.0'}
     hasBin: true
 
@@ -170,18 +170,18 @@ snapshots:
 
   '@formatjs/icu-skeleton-parser@2.1.11': {}
 
-  '@gnim-js/gtk4@2.0.0-beta.26(gnim@2.0.0-beta.26)':
+  '@gnim-js/gtk4@2.0.0-beta.28(gnim@2.0.0-beta.28)':
     dependencies:
-      gnim: 2.0.0-beta.26
+      gnim: 2.0.0-beta.28
 
-  '@gnim-js/linux-x64@2.0.0-beta.26':
+  '@gnim-js/linux-x64@2.0.0-beta.28':
     optional: true
 
-  gnim@2.0.0-beta.26:
+  gnim@2.0.0-beta.28:
     dependencies:
       intl-messageformat: 11.2.15
     optionalDependencies:
-      '@gnim-js/linux-x64': 2.0.0-beta.26
+      '@gnim-js/linux-x64': 2.0.0-beta.28
 
   intl-messageformat@11.2.15:
     dependencies:
