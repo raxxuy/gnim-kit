@@ -10,7 +10,8 @@
   "type": "module",
   "files": [
     "src/**/*.ts",
-    "src/**/*.tsx"
+    "src/**/*.tsx",
+    "tsconfig.json"
   ],
   "exports": {
     ".": "./src/index.ts"
