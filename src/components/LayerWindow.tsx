@@ -1,3 +1,5 @@
+/** @jsxImportSource gnim */
+
 import type Gdk from "gi://Gdk?version=4.0";
 import Gtk from "gi://Gtk?version=4.0";
 import Gls from "gi://Gtk4LayerShell?version=1.0";
