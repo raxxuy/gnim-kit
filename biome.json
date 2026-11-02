@@ -1,0 +1,50 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": {
+        "noLabelWithoutControl": "off",
+        "useButtonType": "off"
+      },
+      "nursery": {
+        "useTailwindSortedClasses": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "useTailwindShorthandClasses": {
+          "fix": "safe",
+          "level": "warn"
+        }
+      }
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on",
+        "useSortedInterfaceMembers": "on"
+      }
+    }
+  }
+}

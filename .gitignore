@@ -12,6 +12,7 @@ yarn-error.log*
 pnpm-debug.log*
 # Editor files
 .vscode/*
+.zed
 !.vscode/extensions.json
 .idea
 *.sw?
