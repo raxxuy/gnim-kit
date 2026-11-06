@@ -23,10 +23,10 @@ type OwnedByPopup = "anchor" | "exclusivity" | "margin" | "visible";
 
 export type PopupProps = Omit<LayerWindowProps, OwnedByPopup> & {
   /**
-   * Where the popup window is mounted. The popup can be declared anywhere in
-   * a component tree (e.g. inside a bar button) and still ends up here.
+   * Where the popup window is mounted. Optional, same as `<Portal mount>`:
+   * when omitted, gnim's default mount point is used.
    */
-  mount: PortalMount;
+  mount?: PortalMount;
 
   /** Controlled: the popup is shown while this is true. */
   open: MaybeAccessor<boolean>;
