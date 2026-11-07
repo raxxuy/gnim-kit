@@ -46,7 +46,7 @@ Layer-shell props accept static values or Gnim accessors:
 ```tsx
 <LayerWindow onMount={(window) => window.get_child()?.grab_focus()}>
   <Gtk.Entry />
-</LayerWindow>
+</LayerWindow>;
 ```
 
 Use `onCleanup` to release resources associated with the window. Async errors from callbacks are the caller's responsibility.

@@ -1,4 +1,5 @@
 import { onCleanup, onMount } from "gnim";
+import { toArray } from "../utils/object";
 
 export type ComponentLifecycleProps<T> = {
   /** Runs after component setup, before children and reactive properties. */
@@ -30,12 +31,6 @@ export const createComponentLifecycle = <T>(
     setup?.(value);
     props.onInit?.(value);
 
-    if (typeof props.ref === "function") {
-      props.ref(value);
-    } else {
-      props.ref?.forEach((ref) => {
-        ref(value);
-      });
-    }
+    for (const ref of toArray(props.ref)) ref(value);
   };
 };

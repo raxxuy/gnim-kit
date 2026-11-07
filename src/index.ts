@@ -1,4 +1,4 @@
 export * from "./components/layer-window";
-export * from "./components/popup";
+export * from "./components/svg";
 export * from "./hooks/createBinder";
 export * from "./hooks/createComponentLifecycle";

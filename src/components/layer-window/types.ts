@@ -23,9 +23,17 @@ export interface LayerProperties {
   keyboardMode: KeyboardMode;
   layer: Layer;
   margin: Margin;
-  /** `null` lets the compositor choose the output. */
+  /**
+   * `null` lets the compositor choose the output.
+   * Per gtk4-layer-shell, this should be set before the window is first
+   * mapped; changing it later may be ignored or warn.
+   */
   monitor: Gdk.Monitor | null;
-  /** Shows up in compositor rules, e.g. Hyprland `layerrule` match:namespace. */
+  /**
+   * Shows up in compositor rules, e.g. Hyprland `layerrule` match:namespace.
+   * Should be set before the window is first mapped; later changes may be
+   * ignored or warn.
+   */
   namespace: string;
 }
 

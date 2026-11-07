@@ -10,4 +10,4 @@ export const omit = <T extends object, K extends keyof T>(
 
 /** Normalises `T | T[] | undefined` into an array. */
 export const toArray = <T>(value: T | readonly T[] | undefined): T[] =>
-  value === undefined ? [] : Array.isArray(value) ? [...value] : [value as T];
+  value === undefined ? [] : ([] as T[]).concat(value);
