@@ -1,7 +1,7 @@
 {
   "name": "gnim-kit",
   "version": "0.0.1",
-  "description": "Reusable Gnim components and hooks for GTK4 applications",
+  "description": "Reusable Gnim components for GTK4 applications",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -9,24 +9,26 @@
   },
   "type": "module",
   "files": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "tsconfig.json"
+    "src"
   ],
   "exports": {
     ".": "./src/index.ts"
   },
-  "peerDependencies": {
-    "@gnim-js/gtk4": "^2.0.0-beta.28",
-    "gnim": "^2.0.0-beta.28"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.6.4",
-    "@gnim-js/gtk4": "^2.0.0-beta.28",
-    "gnim": "^2.0.0-beta.28"
-  },
   "scripts": {
     "types": "gnim types",
-    "test": "node --test src/components/*.test.mjs"
+    "check": "tsc --noEmit && biome check"
+  },
+  "dependencies": {
+    "es-toolkit": "^1.53.2"
+  },
+  "peerDependencies": {
+    "@gnim-js/gtk4": "^2.0.0-beta.29",
+    "gnim": "^2.0.0-beta.29"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.8",
+    "@gnim-js/gtk4": "^2.0.0-beta.29",
+    "gnim": "^2.0.0-beta.29",
+    "typescript": "^5.9.3"
   }
 }

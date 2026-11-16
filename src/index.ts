@@ -1,4 +1,8 @@
-export * from "./components/layer-window";
-export * from "./components/svg";
-export * from "./hooks/createBinder";
-export * from "./hooks/createComponentLifecycle";
+// Components
+export * from "./components/LayerWindow";
+export * from "./components/Svg";
+
+// Building blocks for writing components
+export * from "./lib/bind";
+export * from "./lib/lifecycle";
+export * from "./lib/widget";
